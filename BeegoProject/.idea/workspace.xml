@@ -53,9 +53,9 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1599974424857">
+    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1600062740748">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599974424857" />
+    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1600062740748" />
   </component>
 </project>

@@ -7,19 +7,21 @@
 <body>
 用户表<br>
 <a href="/test_orm_add">添加</a><br>
-<table>
-    <thread>
-        <th>用户编号</th>
-        <th>用户名</th>
-    </thread>
-    {{range .users}}
-        <tr>
-            <td>{{.Id}}</td>
-            <td>{{.Username}}</td>
-            <td><a href="">修改</a></td>
-            <td><a href="">删除</a></td>
-        </tr>
-    {{end}}
-</table>
+<form method="post">
+    <table>
+        <thread>
+            <th>用户编号</th>
+            <th>用户名</th>
+        </thread>
+            {{range .users}}
+                <tr>
+                    <td>{{.Id}}</td>
+                    <td>{{.Username}}</td>
+                    <td><a href="/test_orm_update?id={{.Id}}">修改</a></td>
+                    <td><a href="/test_orm_delete?id={{.Id}}">删除</a></td>
+                </tr>
+            {{end}}
+    </table>
+</form>
 </body>
 </html>
