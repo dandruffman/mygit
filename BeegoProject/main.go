@@ -8,8 +8,8 @@ import (
 )
 
 func init() {
-	orm.RegisterDriver("postgres",orm.DRPostgres)
-	orm.RegisterDataBase("default", "postgres", "user=postgres password=admin dbname=test port=5432 sslmode=disable")
+	orm.RegisterDriver("postgres",orm.DRPostgres)//注册数据库驱动
+	orm.RegisterDataBase("default", "postgres", "user=postgres password=admin dbname=test port=5432 sslmode=disable")//注册数据库
 }
 
 func main() {

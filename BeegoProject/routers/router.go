@@ -6,6 +6,7 @@ import (
 )
 
 func init() {
+	//注册路由
     beego.Router("/", &controllers.MainController{})
 	//增删改查
 	beego.Router("/test_orm_list", &controllers.TestOrmListController{})
