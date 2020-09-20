@@ -2,11 +2,12 @@ package models
 
 import "github.com/astaxie/beego/orm"
 
-type Users struct {
+type Todos struct {
 	Id int
-	Username string
+	Matter string
+	Status bool
 }//创建结构体
 
 func init()  {
-	orm.RegisterModel(new(Users))//注册模型
+	orm.RegisterModel(new(Todos))//注册模型
 }

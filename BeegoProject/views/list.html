@@ -5,23 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-用户表<br>
-<a href="/test_orm_add">添加</a><br>
-<form method="post">
+Todos<br>
+<form action="/test_orm_add" method="post">
+    <input type="text" name="matter" placeholder="What needs to be done?">
+    <input type="submit" value="submit">
+</form>
+<form action="/test_orm_update" method="post">
     <table>
-        <thread>
-            <th>用户编号</th>
-            <th>用户名</th>
-        </thread>
-            {{range .users}}
+            {{range .todos}}
                 <tr>
-                    <td>{{.Id}}</td>
-                    <td>{{.Username}}</td>
-                    <td><a href="/test_orm_update?id={{.Id}}">修改</a></td>
+                    <td><input type="checkbox" name="matter" value="{{.Id}}" />{{.Matter}}</td>
                     <td><a href="/test_orm_delete?id={{.Id}}">删除</a></td>
                 </tr>
             {{end}}
     </table>
+    <input type="submit" value="complete" /><br>
+    <a href="/test_orm_all_list" >All</a>
+    <a href="/test_orm_active_list" >Active</a>
+    <a href="/test_orm_completed_list" >Completed</a>
+    <a href="/test_orm_clear_list">Clear completed</a>
 </form>
 </body>
 </html>
